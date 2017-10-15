@@ -107,6 +107,7 @@
         highlightedIndexMax: 7,
         similiarData: [],
         placeholderVal: this.placeholder,
+        textVal: this.value,
         types: [{
           name: 'facebook',
           formClass: 'searchbox sbx-facebook',
@@ -236,11 +237,6 @@
       getSVGClear () {
         var type = this.getType()
         return type.svgClear
-      },
-      textVal: {
-        get () {
-          return this.value
-        }
       }
     },
     methods: {
