@@ -240,10 +240,6 @@
       textVal: {
         get () {
           return this.value
-        },
-        set (v) {
-          console.trace()
-          this.$emit('input', v)
         }
       }
     },
