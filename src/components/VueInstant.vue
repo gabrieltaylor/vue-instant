@@ -4,7 +4,18 @@
       <form novalidate="novalidate" onsubmit="return false;" :class="getFormClass">
         <div role="search" :class="getClassWrapper">
           <input type="search" name="search" :placeholder="getPlaceholder" autocomplete="off" required="required" :class="getClassInputPlaceholder" tabindex="-1">
-          <input :disabled="disabled" @click="emitClickInput" @keyup='changeText' v-model='textVal' type="search" :name="name" placeholder="" autocomplete="off" required="required" :class="getClassInput" :autofocus="autofocus">
+          <input
+            :disabled="disabled"
+            @click="emitClickInput"
+            @keyup='changeText'
+            v-model='textVal'
+            type="search"
+            :name="name"
+            placeholder=""
+            autocomplete="off"
+            required="required"
+            :class="getClassInput"
+            :autofocus="autofocus">
           <button @click="emitClickButton" type="submit" :class="getClassSubmit" tabindex="-1">
             <svg role="img" aria-label="Search">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="getSVGSearch"></use>
@@ -163,9 +174,9 @@
           classInput: 'sbx-custom__input',
           classInputPlaceholder: 'sbx-custom__input-placeholder',
           classSubmit: 'sbx-custom__submit',
-          svgSearch: '#sbx-icon-search-8',
+          svgSearch: '#sbx-icon-search-3',
           classReset: 'sbx-custom__reset',
-          svgClear: '#sbx-icon-clear-4',
+          svgClear: '#sbx-icon-clear-1',
           highlighClass: 'highlighted__custom'
         }
         ]
